@@ -159,4 +159,4 @@ Figure 14. Original Python code
  6. https://github.com/call-042PE/PyInjector
  7. https://pyarmor.readthedocs.io/en/latest/how-to-do.html
  8. https://rushter.com/blog/python-bytecode-patch/
-"# FLARE-ON9-Chal11_Unpacking-Pyarmor" 
+
