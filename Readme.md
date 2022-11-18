@@ -90,7 +90,7 @@ When running the Obfuscated script, pyarmor will decrypt the obfuscated_code to 
 
 [![7](https://user-images.githubusercontent.com/39437600/201512050-2e7a5b8d-eaa2-4523-b6e6-4e611083e2dc.png)](https://user-images.githubusercontent.com/39437600/201512050-2e7a5b8d-eaa2-4523-b6e6-4e611083e2dc.png)
 
-Figure 7. Exceute string_code by CPython API in Pytransform.dll
+Figure 7. Execute string_code by CPython API in Pytransform.dll
 
 So to dump the string_code of the main module we need to set a breakpoint at the location where PyEval_EvalCode will be called (at 0x6D605827). At this location, we will traverse all the frames, and dump the code object of the frame where the string_code of the main module is located. To inject python code into python process, we can use [PyInjector](https://github.com/call-042PE/PyInjector) , Pyinjector.dll will inject python code in code.py using PyRun_SimpleString API: [
 
